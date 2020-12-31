@@ -5,7 +5,8 @@ DELIMITER $$
 CREATE PROCEDURE get_customers()
 BEGIN
     SELECT *
-    FROM customers;
+    FROM customers
+    ORDER BY first_name;
 END $$
 
 DELIMITER ;
